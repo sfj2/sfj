@@ -23,6 +23,7 @@ const debug = debugLib('sfj');
 
 const server = express();
 server.use('/public', express.static(path.join(__dirname, '/build')));
+server.use('/images', express['static'](path.join(__dirname, '/assets/images')));
 server.use(compression());
 server.use(bodyParser.json());
 

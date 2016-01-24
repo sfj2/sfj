@@ -13,7 +13,6 @@ class Application extends React.Component {
 
         return (
             <div>
-                <Nav currentRoute={this.props.currentRoute} links={pages} />
                 <Handler />
             </div>
         );

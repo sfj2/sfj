@@ -12,7 +12,7 @@ class Html extends React.Component {
                 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css" />
             </head>
             <body>
-                <h1>console.log</h1>
+                <h1></h1>
                 <div id="app" dangerouslySetInnerHTML={{__html: this.props.markup}}></div>
                 <script dangerouslySetInnerHTML={{__html: this.props.state}}></script>
                 <script src={'/public/js/' + this.props.clientFile}></script>
