@@ -15,7 +15,7 @@ class Home extends React.Component {
                                 fontSize: '20px'}}>
                         {this.getCountdown()}
                     </p>
-                    <img src="/images/girl.png"
+                    <img src="http://c2.staticflickr.com/2/1596/23948188374_77061251e2_z.jpg"
                         style={{marginLeft: '-70px'}}>
                     </img>
                     <p>
