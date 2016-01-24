@@ -9,17 +9,19 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <div style={{textAlign: 'center'}}>
+                <div style={{textAlign: 'center',
+                            fontFamily: 'Courier, serif',}}>
+                    <h2>coming soon..</h2>
                     <p 
-                        style={{fontFamily: 'Georgia, serif',
-                                fontSize: '20px'}}>
+                        style={{fontSize: '20px'}}>
                         {this.getCountdown()}
                     </p>
                     <img src="http://c2.staticflickr.com/2/1596/23948188374_77061251e2_z.jpg"
                         style={{marginLeft: '-70px'}}>
                     </img>
                     <p>
-                       <a 
+                        <div style={{fontSize: '10px', color: '#aaa'}}>image courtesy</div>
+                        <a 
                             href="http://sweetclipart.com/" 
                             style={{fontSize: '10px', color: '#ccc'}}>
                             www.sweetclipart.com
@@ -50,8 +52,8 @@ class Home extends React.Component {
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
 
-        return months + ' Months, ' + days + ' Days, ' + hours + ' Hrs, '
-            + minutes + ' Mins, ' + seconds + ' Secs';
+        return months + ' Mths ' + days + ' Days ' + hours + ' Hrs '
+            + minutes + ' Mins ' + seconds + ' Secs';
     }
     componentDidMount() {
         var self = this;

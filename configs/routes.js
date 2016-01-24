@@ -3,7 +3,7 @@ export default {
         path: '/',
         method: 'get',
         page: 'home',
-        title: 'Home',
+        title: 'It\'s a Girl!',
         handler: require('../components/Home')
     },
     about: {
